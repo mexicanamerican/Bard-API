@@ -95,10 +95,10 @@ class BardCookies(Bard):
 
         if session is None:
             new_session = requests.Session()
-            new_session.headers = SESSION_HEADERS
-
+            cookie = ""
             for k, v in self.cookie_dict.items():
-                new_session.cookies.set(k, v)
+                cookie += f"{k}={v}; "
+            new_session.headers.update({"Cookie": cookie})
             return new_session
         else:
             return session
@@ -113,7 +113,7 @@ class BardCookies(Bard):
             Exception: If the __Secure-1PSID value is invalid or SNlM0e value is not found in the response.
         """
         resp = self.session.get(
-            "https://bard.google.com/", timeout=self.timeout, proxies=self.proxies
+            "https://gemini.google.com/", timeout=self.timeout, proxies=self.proxies
         )
         if resp.status_code != 200:
             raise Exception(
@@ -372,7 +372,7 @@ class BardAsyncCookies(BardAsync):
         """
 
         resp = await self.client.get(
-            "https://bard.google.com/", timeout=self.timeout, follow_redirects=True
+            "https://gemini.google.com/", timeout=self.timeout, follow_redirects=True
         )
         if resp.status_code != 200:
             raise Exception(
