@@ -1,7 +1,26 @@
-Development Status :: 5 - Production/Stable
+Development Status :: 7 - Inactive
+
+<br>
 
 
-# Google ~~Bard~~ Gemini API
+
+***
+
+
+### `Notice` Transition to <img src="https://www.gstatic.com/lamda/images/favicon_v1_150160cddff7f294ce30.svg" width="35px" alt="Gemini Icon" /> [Gemini API](https://github.com/dsdanielpark/Gemini-API)
+
+In February 2024, Bard has changed its service name to Gemini.
+- For some countries/regions where the `__Secure-1PSID` cookie value ends with a single dot: [Bard API](https://github.com/dsdanielpark/Bard-API) >= 0.1.40
+- For all other countries/regions: Starting from March 1st, please go to the [Gemini API](https://github.com/dsdanielpark/Gemini-API) package.
+
+Moving forward, updates will primarily focus on the Gemini API package.
+
+
+***
+<br>
+
+
+# <img src="https://www.gstatic.com/lamda/images/favicon_v1_150160cddff7f294ce30.svg" width="35px" alt="Gemini Icon" /> Google - Bard API
 
 <p align="left">
 <a href="https://github.com/dsdanielpark/Bard-API"><img alt="PyPI package" src="https://img.shields.io/badge/pypi-BardAPI-black"></a>
@@ -27,8 +46,8 @@ I referred to this github repository([github.com/acheong08/Bard](https://github.
 
 <br>
 
-- [Google  ~~Bard~~ Gemini API](#google--bard-api)
-  - [What is Google ~~Bard~~ Gemini?](#what-is-google-gemini)
+- [Google Bard API](#google--bard-api)
+  - [What is Google Bard?](#what-is-google-gemini)
   - [Install](#install)
   - [Authentication](#authentication)
   - [Usage](#usage)
@@ -48,11 +67,6 @@ I referred to this github repository([github.com/acheong08/Bard](https://github.
 
 
 
-
-<br>
-
-## Updates 
-- `2024.02.09` We are currently proceeding with a hotfix update due to the service name change from bard to Gemini. Please wait a moment.
 
 <br>
 
